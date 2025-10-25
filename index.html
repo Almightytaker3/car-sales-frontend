@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Sales Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Car Sales Platform</h1>
+    <nav>
+      <a href="#contact">Contact Us</a>
+      <a href="#listings">Car Listings</a>
+      <a href="https://car-sales-backend.onrender.com/login" target="_blank">Admin Login</a>
+    </nav>
+  </header>
+
+  <section id="listings">
+    <h2>Submit Your Car Listing</h2>
+    <form action="https://car-sales-backend.onrender.com/submit-listing" method="POST">
+      <input type="text" name="CarModel" placeholder="Car Model" required />
+      <input type="text" name="Year" placeholder="Year" required />
+      <input type="text" name="Price" placeholder="Price" required />
+      <input type="url" name="ImageURL" placeholder="Image URL (optional)" />
+      <button type="submit">Submit Listing</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://car-sales-backend.onrender.com/submit-contact" method="POST">
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      <textarea name="Message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section id="gallery">
+    <h2>Sample Cars</h2>
+    <div class="car-gallery">
+      <img src="https://www.pexels.com/photo/sleek-luxury-sports-car-front-view-in-garage-29851072/download/" alt="Luxury Sports Car" />
+      <img src="https://www.pexels.com/photo/modern-red-sports-car-side-view-isolated-on-white-background-31193802/download/" alt="Red Sports Car" />
+      <img src="https://www.pexels.com/photo/suv-car-parked-in-the-field-18218679/download/" alt="SUV in Field" />
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Car Sales Platform</p>
+    <a href="https://wa.me/2348012345678" target="_blank">Chat on WhatsApp</a>
+  </footer>
+</body>
+</html>
